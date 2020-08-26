@@ -1,24 +1,36 @@
 .header {
-//   @include prefix(display, flex, webkit ms);
-//   @include prefix(justify-content, space-between, webkit ms);
-}
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 
-.logo {
-  font-family: $font-heading;
-  font-weight: $font-heading-weight;
-  font-size: 3rem;
-}
+    &__col {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 70%;
+    }
 
-.nav {
-  @include prefix(display, flex, webkit ms);
-  @include prefix(justify-content, space-between, webkit ms);
-  padding: 2rem;
+    &__sub-col {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
 
-  ul {
-    list-style: none;
-  }
+        &--justified {
+            justify-content: space-between;
+        }
+    }
 
-  li {
-    display: inline;
-  }
+    &__shipping {
+        margin: 0;
+        padding: 0;
+        letter-spacing: 0.5rem;
+    }
+
+    &__icon {
+        
+        margin: 0 0 0 3rem;
+        
+    }
+
+
 }

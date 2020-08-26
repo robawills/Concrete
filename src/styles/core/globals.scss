@@ -1,14 +1,14 @@
 :root {
-    --pink: #FF5A53;
-    --off-white: #EFF0F0;
-    --light-gray: #4e4e4e;
+    --blue: #54ADD3;
+    --dark-blue: #234766;
+    --light-gray: #F2F2F2;
     --dark-gray: #1f1f1f;
     --white: #fff;
     --black: #000000;
  
     --padding-sm: 2rem;
     --padding-md: 3rem;
-    --padding-lg: 4rem;
+    --padding-lg: 8rem;
     
     --container-width: calc(160rem + var(--padding-lg) * 2);
     --radius: 2.5rem;
@@ -28,11 +28,6 @@
       justify-content: space-between;
     }
   
-    &--xl {
-      max-width: calc(var(--container-width) + 40rem);
-      padding: 0;
-    }
-  
     &--padding-top {
       padding-top: var(--padding-md);
     }
@@ -40,4 +35,8 @@
     &--top {
       align-items: flex-start;
     }
+  }
+
+  .nimbus {
+    font-family: nimbus-sans-extended, sans-serif; 
   }
