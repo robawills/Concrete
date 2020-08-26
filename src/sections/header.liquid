@@ -25,7 +25,7 @@
     </div>
   {%- endif -%}
 
-  <header role="banner" class="header">
+  <header role="banner" class="header  grid-container  grid-container--justified">
     <a href="/" class="logo">
       {% if section.settings.logo != blank %}
         {% capture image_size %}{{ section.settings.logo_max_width }}x{% endcapture %}
@@ -66,6 +66,7 @@
       {{ 'layout.cart.title' | t }}
       (<span data-cart-count>{{ cart.item_count }}</span><span class="visually-hidden"> {{ 'layout.cart.items_count' | t: count: cart.item_count }}</span>)
     </a>
+
   </header>
 
   <nav role="navigation" class="nav">
@@ -116,14 +117,7 @@
   </nav>
 </section>
 
-{% if section.settings.logo != blank %}
-  <style>
-    .logo-image {
-      display: block;
-      max-width: {{ section.settings.logo_max_width }}px;
-    }
-  </style>
-{% endif %}
+
 
 {% schema %}
   {

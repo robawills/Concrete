@@ -1,0 +1,43 @@
+:root {
+    --pink: #FF5A53;
+    --off-white: #EFF0F0;
+    --light-gray: #4e4e4e;
+    --dark-gray: #1f1f1f;
+    --white: #fff;
+    --black: #000000;
+ 
+    --padding-sm: 2rem;
+    --padding-md: 3rem;
+    --padding-lg: 4rem;
+    
+    --container-width: calc(160rem + var(--padding-lg) * 2);
+    --radius: 2.5rem;
+}
+
+.grid-container {
+    max-width: var(--container-width);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 var(--padding-md);
+  
+    &--justified {
+      justify-content: space-between;
+    }
+  
+    &--xl {
+      max-width: calc(var(--container-width) + 40rem);
+      padding: 0;
+    }
+  
+    &--padding-top {
+      padding-top: var(--padding-md);
+    }
+  
+    &--top {
+      align-items: flex-start;
+    }
+  }

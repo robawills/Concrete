@@ -1,7 +1,6 @@
 .header {
-  @include prefix(display, flex, webkit ms);
-  @include prefix(justify-content, space-between, webkit ms);
-  padding: 2rem;
+//   @include prefix(display, flex, webkit ms);
+//   @include prefix(justify-content, space-between, webkit ms);
 }
 
 .logo {
