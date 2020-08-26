@@ -1,0 +1,9 @@
+.hero-text {
+    text-align: center;
+    width: 100%;
+    padding: var(--padding-lg) 0;
+    font-size: 4.5rem;
+    &__boarder-b {
+        border-bottom: 0.5rem solid var(--blue);
+    }
+}

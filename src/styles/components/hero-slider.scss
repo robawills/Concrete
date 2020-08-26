@@ -1,4 +1,8 @@
 .hero-slider {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
     &__slide {
         width: 100%;
         display: flex;
@@ -39,5 +43,10 @@
 
     &__button {
         font-size: 2rem;
+    }
+
+    &__next {
+        margin-right: 2rem;
+        padding: 1.5rem;
     }
 }
