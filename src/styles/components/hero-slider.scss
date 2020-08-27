@@ -3,6 +3,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-end;
+    overflow: hidden;
+
     &__slide {
         width: 100%;
         display: flex;
@@ -23,6 +25,7 @@
             z-index: 3;
         }
     }
+
     &__info {
         width: 40%;
         padding: var(--padding-lg) calc(var(--padding-lg) * 2) var(--padding-lg) var(--padding-md);
@@ -45,8 +48,14 @@
         font-size: 2rem;
     }
 
+    &__controls {
+        width: 100%;
+        position: relative;
+    }
+
     &__next {
         margin-right: 2rem;
         padding: 1.5rem;
+        float: right;
     }
 }
