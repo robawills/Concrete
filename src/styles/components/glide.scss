@@ -6,19 +6,24 @@
 
 @import "../../scripts/tools/glide/src/assets/sass/glide.theme.scss";
 
-// .glide {
-//     width: 100%;
-// }
-
-.glide__track {
-    overflow: visible;
-}
-
-.glide__slide {
-    opacity: 0.5;
-    transition: 0.3s all;
+.glide {
     width: 100%;
-    &--active {
-        opacity: 1;
+    &__bullets {
+        background-color: red;
+        position: relative;
+        height: 5rem;
+        width: 20rem;
+    }
+    &__track {
+        overflow: visible;
+    }
+    &__slide {
+        opacity: 0.5;
+        transition: 0.3s all;
+        width: 100%;
+        &--active {
+            opacity: 1;
+        }
     }
 }
+
